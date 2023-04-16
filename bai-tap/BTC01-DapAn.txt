@@ -1,0 +1,91 @@
+1. Mối quan hệ giữa hệ điều hành và phần cứng máy tính là gì?
+
+- Hệ điều hành giúp cung cấp phần cứng máy tính cho các chương trình ứng dụng. Không có hệ điều hành, chúng ta không thể truy cập phần cứng máy tính.
+
+2.Những bất tiện nào mà người dùng có thể gặp phải khi tương tác với hệ thống máy tính mà không có hệ điều hành?
+
+- Hệ điều hành là một thành phần bắt buộc của hệ thống máy tính.
+
+- Không có hệ điều hành, phần cứng máy tính chỉ là một hệ thống thiết bị điện tử không hoạt động, gây bất tiện cho người dùng khi thực hiện các chương trình.
+
+- Vì phần cứng máy tính chỉ hiểu ngôn ngữ máy và việc phát triển từng chương trình bằng ngôn ngữ máy rất khó khăn. Vì vậy, không có hệ điều hành thì việc thực thi chương trình người dùng để giải quyết vấn đề là vô cùng khó khăn.
+
+3. Giải thích mục đích chính của một hệ điều hành?
+
+- Hệ điều hành cung cấp một môi trường để phát triển và thực hiện các chương trình.
+
+- Hệ điều hành được thiết kế để đảm bảo một hệ thống máy tính hoạt động tốt bằng cách quản lý các hoạt động xử lý tính toán của nó (cấp phát tài nguyên, điều phối tiến trình, đồng bộ hoạt động các tiến trình, quản lý bộ nhớ,...)
+
+4. Kernel là gì?
+
+- Kernel là cốt lõi của mọi hệ điều hành. Nó kết nối các ứng dụng để xử lý dữ liệu thực tế. Nó cũng quản lý tất cả các giao tiếp giữa các thành phần phần mềm và phần cứng để đảm bảo tính khả dụng và độ tin cậy.
+
+5. Hệ thống thời gian thực (real-time systems) là gì?
+
+- Hệ thống thời gian thực (real-time systems) là hệ thống chỉ cần hoàn thành các công việc, các tác vụ trong một khoảng thời gian cho phép.
+(Trả lời như trong slide)
+
+6. Hệ thống chia sẻ thời gian (time- sharing system) là gì?
+
+- Hệ thống chia sẻ thời gian (time-sharing system) là hệ thống có nhiều công việc cùng được thực hiện thông qua cơ chế chuyển đổi của CPU và thời gian mỗi lần chuyển đổi diễn ra rất nhanh.
+(Trả lời như trong slide)
+
+7. Đa nhiệm (multitasking) là gì?
+
+- Hệ thống đa nhiệm cho phép người dùng chạy nhiều ứng dụng cùng một lúc. Tuy nhiên, tại một thời điểm, chỉ có một ứng dụng có thể tương tác với người dùng. Hệ thống này còn cho phép một số ứng dụng khác có thể chạy background.
+
+8. Giải thích những lợi ích của hệ thống đa xử lý (multiprocessor system) là gì?
+
+- Số lượng bộ xử lý tăng lên --> thông lượng tăng.
+
+- Tiết kiệm chi phí do có thể chia sẻ tài nguyên: một máy tính nhiều CPU tiết kiệm hơn nhiều máy tính một CPU trong việc xử lý tự động.
+
+- Tăng độ tin cậy tổng thể: một CPU hư các CPU còn lại vẫn có thể hoạt động.
+
+9. Sự khác biệt giữa Hệ thống thời gian thực và Hệ thống chia sẻ thời gian là gì?
+
+* Vấn đề 1:
+	+ Hệ thống thời gian thực: Trong hệ thống này, các tác vụ được xử lý và phải hoàn thành  trong thời hạn nhất định.
+	+ Hệ thống chia sẻ thời gian: Trong hệ thống này, nhiều người dùng được phép chia sẻ đồng thời các tài nguyên máy tính.
+
+* Vấn đề 2:
+	+ Hệ thống thời gian thực: Xử lý thời gian thực chủ yếu dành cho một ứng dụng.
+	+ Hệ thống chia sẻ thời gian: Chia sẻ thời gian xử lý giao dịch với nhiều ứng dụng khác nhau.
+
+* Vấn đề 3:
+	+ Hệ thống thời gian thực: Người dùng chỉ có thể thực hiện yêu cầu và không thể viết hoặc sửa đổi chương trình.
+	+ Hệ thống chia sẻ thời gian: Người dùng có thể viết và sửa đổi chương trình.
+
+* Vấn đề 4:
+	+ Hệ thống thời gian thực: Người dùng phải nhận được phản hồi trong thời hạn quy định; nếu không nó có thể dẫn đến một thảm họa.
+	+ Hệ thống chia sẻ thời gian: Người dùng sẽ nhận được phản hồi trong vài giây và nếu không chính xác về thời gian, kết quả không phải là thảm họa.
+
+* Vấn đề 5:
+	+ Hệ thống thời gian thực: Không có chuyển đổi ngữ cảnh diễn ra trong hệ thống này.
+	+ Hệ thống chia sẻ thời gian: CPU chuyển từ tiến trình này sang tiến trình khác.
+
+10. Sự khác biệt giữa đa xử lý và đa chương trình là gì?
+
+* Vấn đề 1:
+	+ Đa xử lý: Đa xử lý đề cập đến việc xử lý nhiều tiến trình cùng một lúc bởi nhiều CPU.
+	+ Đa chương trình: Đa chương trình giữ một số chương trình trong bộ nhớ chính cùng một lúc và thực hiện chúng đồng thời sử dụng CPU đơn.
+
+* Vấn đề 2:
+	+ Đa xử lý: Nhiều CPU.
+	+ Đa chương trình: Một CPU.
+
+* Vấn đề 3:
+	+ Đa xử lý: Cho phép xử lý song song.
+	+ Đa chương trình: Có chuyển đổi ngữ cảnh.
+
+* Vấn đề 4:
+	+ Đa xử lý: Xử lý tác vụ nhanh hơn.
+	+ Đa chương trình: Xử lý tác vụ chậm hơn.
+
+* Vấn đề 5:
+	+ Đa xử lý: Cho phép sử dụng hiệu quả nhiều thiết bị của hệ thống máy tính.
+	+ Đa chương trình: Ít hiệu quả hơn so với đa xử lý.
+
+* Vấn đề 6:
+	+ Đa xử lý: Thường đắt hơn.
+	+ Đa chương trình: Ít tốn kém.
